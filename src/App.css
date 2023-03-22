@@ -1,0 +1,160 @@
+/* Styles for the app */
+.App {
+  text-align: center;
+  font-family: Arial Regular;
+}
+
+/* Background color for each piece of content */
+header, .weather-rn {
+  background-color: #FFFFFF;
+
+}
+
+h1 {
+  font-size: 23pt;
+  color:#262626;
+}
+
+.weather-info {
+  margin: 7px 0px 0px 0px;
+}
+
+.weather-rn {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(127, 121, 121);
+}
+
+
+.weather-rn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hour3:nth-child(-n+4) {
+  margin-right: 8px;
+}
+
+.hour3 {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(127, 121, 121);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  background-color: #FFFFFF;
+}
+
+.marginright {
+  margin-right: -70px;
+}
+
+.hour3-secondpart {
+  background-color: #E5F6FD;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+/* Styling components so they match the instructions look of the app */
+.left {
+  text-align: left;
+  padding-left: 7px;
+}
+/* Styling components so they match the instructions look of the app */
+.right {
+  text-align: right;
+  padding-right: 7px;
+}
+
+/* Styling the components that show weather every 3 hour */ 
+.weather-3hour {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content {
+  margin: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: #F8F9FA;
+}
+
+#temp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.temperatureCur {
+  font-size: 26pt;
+  color: #262626;
+}
+
+.city {
+  font-size: 19pt;
+  color: #262626;
+}
+
+.faded {
+  font-size: 13pt;
+  color: #70757A;
+}
+
+.temp2 {
+  font-size: 15pt;
+  color: #70757A;
+}
+
+.smallInfo {
+  font-size: 10pt;
+  color: #70757A;
+}
+
+/* Styling the drop-down */
+#city-select {
+  position: relative;
+  display: inline-block;
+  color:  #262626;
+  font-size: 13pt;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-color: rgb(127, 121, 121);
+  width: 100%;
+  font-size: 13pt;
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  /*.content {
+    width: 60%; 
+    margin: auto;
+  }*/
+
+  .marginright {
+    margin-right: -150px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+}
+
